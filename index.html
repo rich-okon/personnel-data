@@ -14,7 +14,13 @@
         <h2>Personal Infor</h2>
         <div class="">
             <p>Name: Okon, Richard</p>
-            <p>Day of Birth: 27th June, 1983</p>
+            <p>Day of Birth: 
+                <form action="/action_page.php">
+                    <label for="bdaymonth">Birthday (month and year):</label>
+                    <input type="month" id="bdaymonth" name="bdaymonth">
+                    <input type="submit" value="Submit">
+                  </form>
+            </p>
             <p>Place of Birth: Afaha Ibesikpo</p>
             <p>State of Birth: Akwa Ibom</p>
             <p>Blood group: 0-</p>
@@ -29,6 +35,15 @@
             <p>Secondary School: Federal Government College, Ibiakpan, Ikot Ekpene, AKS</p>
             <p>Tetiary Institution: University of Uyo, Uyo, AKS</p>
 
+           <h4> How many times did you repeat year or course: 
+              <form action="/action_page.php">
+                <label for="quantity">Number of Times (between 0 and 15):</label>
+                <input type="number" id="quantity" name="quantity" min="0" max="15">
+                <input type="submit" value="Submit">
+              </form>
+           </h4>
+
+
         </div>
 
         <div class="">
@@ -41,14 +56,20 @@
         <div class="">
             <h2>My Hobbies</h2>
             <form action="/action_page.php">
-                <label for="hobbies">Choose a hobbies:</label>
+                <label for="hobbies">Choose a hobby:</label>
                 <select id="hobbies" name="hobbies">
                   <option value="jogging">Jogging</option>
                   <option value="reading">Reading</option>
                   <option value="anearobics">Anearobics</option>
                   <option value="scrabble">Scrabble</option>
                 </select>
-                <input type="button" onclick="alert('form submitted!')" value="Click Me!">
+                <p><input type="button" onclick="alert('form submitted!')" value="Click Me!"></p>
+
+                  <form action="/action_page.php">
+                    <label for="email">My email:</label>
+                    <input type="email" id="email" name="email">
+                    <input type="submit" value="Submit">
+                  </form>
               </form>
         </div>
     </section>

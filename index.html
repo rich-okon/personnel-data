@@ -12,9 +12,11 @@
     </header>
     <section>
         <h2>Personal Infor</h2>
+        <!-- Consider using one form to create this whole page -->
         <div class="">
             <p>Name: Okon, Richard</p>
             <p>Day of Birth: 
+                <!-- Use a seperate element to wrap the form -->
                 <form action="/action_page.php">
                     <label for="bdaymonth">Birthday (month and year):</label>
                     <input type="month" id="bdaymonth" name="bdaymonth">
@@ -36,6 +38,7 @@
             <p>Tetiary Institution: University of Uyo, Uyo, AKS</p>
 
            <h4> How many times did you repeat year or course: 
+               <!-- Use a seperate element to wrap the form -->
               <form action="/action_page.php">
                 <label for="quantity">Number of Times (between 0 and 15):</label>
                 <input type="number" id="quantity" name="quantity" min="0" max="15">
@@ -64,7 +67,7 @@
                   <option value="scrabble">Scrabble</option>
                 </select>
                 <p><input type="button" onclick="alert('form submitted!')" value="Click Me!"></p>
-
+                <!-- A form cannot be in a form, consider refactoring your code here -->
                   <form action="/action_page.php">
                     <label for="email">My email:</label>
                     <input type="email" id="email" name="email">

@@ -7,31 +7,36 @@
 </head>
 <body>
     <div class="contact">
-        <form action="/action_page.php" target="_blank" method="POST"> <!--- adds the neccessary attributes to the form element -->
-            <div class="name">
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname" value="Richard"><br><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname" value="Okon"><br><br><!-- add a title and a field to type a name -->
+        <form action="/action_page.php" target="_blank" method="POST">
+            <div class="fullname">
+                <!-- Use very clear names so you can remember what they mean few years from now while maintaining your code -->
+                <div class="first-name">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="Richard"><br><br>
+                </div>
+                <div class="last-name">
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Okon"><br><br>
+                </div>
             </div>
 
             <div class="email">
                 <label for="email">Email:</label><br>
-                <input type="email" id="email"> <br><br><!-- add a title and a field to type an email -->
+                <input type="email" id="email"> <br><br>
             </div>
 
             <div class="phone">
                 <label for="telephone">Telephone No:</label><br>
-                <input type="tel" id="telephone"><br><br><!-- add a title and a field to type a phone number -->
+                <input type="tel" id="telephone"><br><br>
             </div>
 
             <div class="comment">
                 <label for="comment">Your Comments:</label><br>
-                <textarea name="message" id="comment" rows="10" cols="30">I am glad, whenn they say say,"let us go into the house of the Lord</textarea><br><br><!-- add a title and a field to type a comment -->
+                <textarea name="message" id="comment" rows="10" cols="30">I am glad, whenn they say say,"let us go into the house of the Lord</textarea><br><br>
             </div>
 
             <div class="submit">
-                <button type="button" onclick="alert('form submitted!')">Click Me!</button><!-- add a submit button -->
+                <button type="button" onclick="alert('form submitted!')">Click Me!</button>
             </div>
         </form>
     </div>

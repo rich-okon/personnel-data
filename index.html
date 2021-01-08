@@ -12,16 +12,18 @@
     </header>
     <section>
         <h2>Personal Infor</h2>
-        <form action="/action_page.php" target="_blank" method="POST"></form><!-- Consider using one form to create this whole page -->
+        <!-- Only one form element is enough -->
+        <form action="/action_page.php" target="_blank" method="POST"></form>
         <div class="">
             <p>Name: Okon, Richard</p>
             <p>Day of Birth: 
                 <!-- Use a seperate element to wrap the form -->
                 <form action="/action_page.php">
+                    <!-- Using a clearer name that you will remember few years from now will help you maintain your code -->
                     <label for="bdaymonth">Birthday (month and year):</label>
                     <input type="month" id="bdaymonth" name="bdaymonth">
                     
-               
+               <!-- Format your elements to align properly -->
             </p>
             <p>Place of Birth: Afaha Ibesikpo</p>
             <p>State of Birth: Akwa Ibom</p>
@@ -38,7 +40,6 @@
             <p>Tetiary Institution: University of Uyo, Uyo, AKS</p>
 
            <h4> How many times did you repeat year or course: 
-               <!-- Use a seperate element to wrap the form -->
               
                 <label for="quantity">Number of Times (between 0 and 15):</label>
                 <input type="number" id="quantity" name="quantity" min="0" max="15">
@@ -46,7 +47,7 @@
               
            </h4>
 
-
+           <!-- Consider removing all the white spaces make your lines align well -->
         </div>
 
         <div class="">
@@ -67,7 +68,6 @@
                   <option value="scrabble">Scrabble</option>
                 </select>
                 
-                <!-- A form cannot be in a form, consider refactoring your code here -->
                   <p>
                     <label for="email">My email:</label> 
                     <input type="email" id="email" name="email">
@@ -76,7 +76,7 @@
                     
                     
                     <div class="submit">
-                        <button type="button" onclick="alert('form submitted!')">Submit!</button><!-- add a submit button -->
+                        <button type="button" onclick="alert('form submitted!')">Submit!</button>
                     </div>
           </form>
         </div>

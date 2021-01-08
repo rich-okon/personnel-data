@@ -12,7 +12,7 @@
     </header>
     <section>
         <h2>Personal Infor</h2>
-        <!-- Consider using one form to create this whole page -->
+        <form action="/action_page.php" target="_blank" method="POST"></form><!-- Consider using one form to create this whole page -->
         <div class="">
             <p>Name: Okon, Richard</p>
             <p>Day of Birth: 
@@ -20,8 +20,8 @@
                 <form action="/action_page.php">
                     <label for="bdaymonth">Birthday (month and year):</label>
                     <input type="month" id="bdaymonth" name="bdaymonth">
-                    <input type="submit" value="Submit">
-                  </form>
+                    
+               
             </p>
             <p>Place of Birth: Afaha Ibesikpo</p>
             <p>State of Birth: Akwa Ibom</p>
@@ -39,11 +39,11 @@
 
            <h4> How many times did you repeat year or course: 
                <!-- Use a seperate element to wrap the form -->
-              <form action="/action_page.php">
+              
                 <label for="quantity">Number of Times (between 0 and 15):</label>
                 <input type="number" id="quantity" name="quantity" min="0" max="15">
                 <input type="submit" value="Submit">
-              </form>
+              
            </h4>
 
 
@@ -58,7 +58,7 @@
 
         <div class="">
             <h2>My Hobbies</h2>
-            <form action="/action_page.php">
+            
                 <label for="hobbies">Choose a hobby:</label>
                 <select id="hobbies" name="hobbies">
                   <option value="jogging">Jogging</option>
@@ -66,14 +66,19 @@
                   <option value="anearobics">Anearobics</option>
                   <option value="scrabble">Scrabble</option>
                 </select>
-                <p><input type="button" onclick="alert('form submitted!')" value="Click Me!"></p>
+                
                 <!-- A form cannot be in a form, consider refactoring your code here -->
-                  <form action="/action_page.php">
-                    <label for="email">My email:</label>
+                  <p>
+                    <label for="email">My email:</label> 
                     <input type="email" id="email" name="email">
-                    <input type="submit" value="Submit">
-                  </form>
-              </form>
+                  </p>
+                    
+                    
+                    
+                    <div class="submit">
+                        <button type="button" onclick="alert('form submitted!')">Submit!</button><!-- add a submit button -->
+                    </div>
+          </form>
         </div>
     </section>
 </body>
